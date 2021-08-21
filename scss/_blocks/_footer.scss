@@ -1,0 +1,103 @@
+.footer{
+    background: #333A44;
+    
+    &__nav{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 22px 0;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 58px;
+    }
+    &__item{
+        margin-right: 32px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim-grey;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    &__icon{
+        width: 24px;
+        height: 24px;
+        fill: $yellow;
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            fill: $light-grey;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .footer{
+        background: #333A44;
+        
+        &__nav{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 64px 0 88px;
+        }
+        &__box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__menu{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0;
+            margin: 41px 0 85px 0;
+        }
+        &__item{
+            margin-right: 0;
+            margin-bottom: 16px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__link{
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dim-grey;
+            &:hover{
+                color: $yellow;
+            }
+        }
+        &__icon{
+            width: 24px;
+            height: 24px;
+            fill: $yellow;
+            margin-right: 24px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                fill: $light-grey;
+            }
+        }
+    }   
+}

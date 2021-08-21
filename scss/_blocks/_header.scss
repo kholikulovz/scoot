@@ -1,0 +1,133 @@
+.header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 22px 0;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 58px;
+    }
+    &__item{
+        margin-right: 32px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim-grey;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    &__btn{
+        @extend %btn_gold;
+    }
+    &__label{
+        display: none;
+    }
+    &__subbox{
+        display: none;
+    }
+}
+.check{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 375px) {
+    .header {
+        &__label{
+            display: block;
+        }
+        &__subbox{
+            position: absolute;
+            display: none;
+            width: 256px;
+            height: 100vh;
+            left: 0;
+            right: 0;
+            top: 76px;
+    
+            background-color:  #333A44;
+            padding: 64px 32px 24px 32px;
+        }
+        &__subitem{
+            margin-bottom: 24px;
+        }
+        &__sublink{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            color: $light-grey;
+            &:hover{
+                color: $yellow;
+            }
+        }
+        &__subbtn{
+            display: inline-block;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            padding: 11px 40px;
+            background-color:  #FCB72B;
+            border: 3px solid #FCB72B;
+            box-sizing: border-box;
+            margin-top: 150px;
+        }
+        &__box{
+            width: 75px;
+            margin-right: 118px;
+        }
+        &__menu{
+            display: none;
+            
+        }
+        &__btn{
+            display: none;
+        }
+    }
+    #check:checked ~ .header__subbox{
+        display: flex;
+        // justify-content: space-between;
+        flex-direction: column;
+        overflow: auto;
+    }
+    #check:checked ~ .main{
+        background-color: rgba($color: #000000, $alpha: 0.75);
+        overflow: hidden;
+    }
+    .check{
+        display: block;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }  
+}

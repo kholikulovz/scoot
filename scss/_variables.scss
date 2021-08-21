@@ -1,0 +1,31 @@
+$yellow:  #FCB72B;
+$dark-navy: #495567;
+$dim-grey: #939CAA;
+$light-grey: #E5ECF4;
+$snow: #F2F5F9;
+$light-yellow: #FFF4DF;
+
+%btn_gold{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 11px 40px;
+    background-color:  #FCB72B;
+    border: 3px solid #FCB72B;
+    box-sizing: border-box;
+    
+    &:hover{
+        background-color: transparent;
+        color: #FCB72B;
+        transition: 1s;
+        
+    }
+}
+
+// .link{
+    //     @extend %btn_gold;
+    // }

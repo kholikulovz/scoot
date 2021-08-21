@@ -1,0 +1,107 @@
+.sign{
+    background-color: #495567;
+    background-image: url(../img/sign-circles.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 102px 0;
+    
+    
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        width: 415px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__subitem{
+        margin-right: 18px;
+        
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__sign-link{
+        display: flex;
+        align-items: center;
+        background-color: #E5ECF4;
+        border-radius: 4px;
+        padding: 8px 16px 9px 10px;
+    }
+    &__icon{
+        margin-right: 11px;
+    }
+    &__sign-text{
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+    }
+    &__sign-title{
+        font-size: 20px;
+        line-height: 24px;  
+        letter-spacing: -0.892857px;
+        color: #495567;        
+    }
+}
+@media screen and (max-width: 768px) {
+    .sign{
+        background-image: url(../img/sign-circles.png);
+        background-position: center bottom;
+        background-size: contain;
+        padding: 62px 0;
+        
+        
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__title{
+            width: 457px;
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .sign{
+        background-image: url(../img/sign-circles.png);
+        background-position:center  bottom;
+        background-size:auto;
+        padding: 88px 0;
+        
+        
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__title{
+            width: 311px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__sign-link{
+            display: flex;
+            align-items: center;
+            background-color: #E5ECF4;
+            border-radius: 4px;
+            padding: 7px 14px 7px 8px;
+        }
+    }
+}

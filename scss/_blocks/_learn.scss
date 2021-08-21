@@ -1,0 +1,262 @@
+.learn{  
+    margin-bottom: 329px;
+    
+    &__menu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 155px;
+        &:first-child{
+            &::after{
+                display: inline-block;
+                content: ""; 
+                background-image: url(../img/telemetry-line.svg);
+                background-repeat: no-repeat;
+                width: 740px;
+                height: 150px;
+                position: absolute; 
+                right: 0;
+                top: 1700px;
+            }
+        }
+        
+        &:nth-child(2){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            &::after{
+                display: inline-block;
+                content: ""; 
+                background-image: url(../img/city-line.svg);
+                background-repeat: no-repeat;
+                width: 740px;
+                height: 150px;
+                position: absolute; 
+                top: 2000px;
+                left: 0;
+            }
+        }
+        &:nth-child(3){
+            &::after{
+                display: inline-block;
+                content: ""; 
+                background-image: url(../img/payment-line.svg);
+                background-repeat: no-repeat;
+                width: 380px;
+                height: 150px;
+                position: absolute; 
+                top: 2670px;
+                right: 0;
+            }
+        }
+    }
+    &__box{
+        width: 445px;
+        margin-right: 90px;
+        
+        &--reverse{
+            margin-left: 90px;
+            margin-right: 0;
+        }
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin: 24px 0 40px;
+    }
+    &__btn{
+        @extend %btn_gold
+    }
+    &__img{
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+    }
+    }
+    @media screen and (max-width: 768px) {
+        .learn{
+            margin-bottom: 104px;
+            
+            &__menu{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            &__item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column-reverse;
+                margin-bottom: 155px;
+                
+                &:nth-child(2){
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column-reverse;
+                }
+                &:first-child{
+                    &::after{
+                        display: inline-block;
+                        content: ""; 
+                        background-image: url(../img/telemetry-line.svg);
+                        background-repeat: no-repeat;
+                        width: 740px;
+                        height: 150px;
+                        position: absolute; 
+                        right: 0;
+                        top: 1850px;
+                    }
+                }
+                
+                &:nth-child(2){
+                    &::after{
+                        display: inline-block;
+                        content: ""; 
+                        background-image: url(../img/city-line.svg);
+                        background-repeat: no-repeat;
+                        width: 740px;
+                        height: 150px;
+                        position: absolute; 
+                        top: 2500px;
+                        left: 0;
+                    }
+                }
+                &:nth-child(3){
+                    &::after{
+                        display: inline-block;
+                        content: ""; 
+                        background-image: url(../img/payment-line.svg);
+                        background-repeat: no-repeat;
+                        width: 350px;
+                        height: 150px;
+                        position: absolute; 
+                        top: 3560px;
+                        right: 0;
+                    }
+                }
+            }
+            &__box{
+                width: 573px;
+                margin-right: 0;
+                text-align: center;
+                margin-top: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+                &--reverse{
+                    margin-left: 0;
+                    margin-right: 0;
+                    text-align: center;
+                    margin-top: 56px;
+                }
+            }
+            &__title{
+                width: 457px;
+                text-align: center;
+            }
+            &__text{
+                margin: 40px 0;
+            }
+            &__img{
+                width: 445px;
+                height: 445px;
+                border-radius: 50%;
+            }
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .learn{
+            margin-bottom: 120px;
+            
+            &__item{
+                margin-bottom: 120px;
+                &:first-child{
+                    &::after{
+                        display: inline-block;
+                        content: ""; 
+                        background-image: url(../img/telemetry-line-mobile.svg);
+                        background-repeat: no-repeat;
+                        width: 350px;
+                        height: 150px;
+                        position: absolute; 
+                        right: 0;
+                        top: 2225px;
+                    }
+                }
+                
+                &:nth-child(2){
+                    &::after{
+                        display: inline-block;
+                        content: ""; 
+                        background-image: url(../img/city-line-mobile.svg);
+                        background-repeat: no-repeat;
+                        width: 360px;
+                        height: 150px;
+                        position: absolute; 
+                        top: 2950px;
+                        left: 0;
+                    }
+                }
+                &:nth-child(3){
+                    &::after{
+                        display: inline-block;
+                        content: ""; 
+                        background-image: url(../img/payment-line-mobile.svg);
+                        background-repeat: no-repeat;
+                        width: 230px;
+                        height: 150px;
+                        position: absolute; 
+                        top: 3850px;
+                        right: 0;
+                    }
+                }
+            }
+            &__box{
+                width: 311px;
+                margin-right: 0;
+                text-align: center;
+                margin-top: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+                &--reverse{
+                    margin-left: 0;
+                    margin-right: 0;
+                    text-align: center;
+                    margin-top: 56px;
+                }
+            }
+            &__title{
+                width: 311px;
+                text-align: center;
+            }
+            &__text{
+                margin: 32px 0;
+            }
+            &__img{
+                width: 311px;
+                height: 311px;
+                border-radius: 50%;
+            }
+        }
+    }
